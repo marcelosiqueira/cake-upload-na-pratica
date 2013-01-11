@@ -9,8 +9,20 @@ App::uses('AppController', 'Controller');
 class EventsController extends AppController 
 {
 
+
 /**
- * admin_edit method
+ * index method
+ *
+ * @return void
+ */
+	public function index() 
+	{
+		$this->Event->recursive = 0;
+		$this->set('events', $this->paginate());
+	}
+
+/**
+ * edit method
  *
  * @throws NotFoundException
  * @param string $id
