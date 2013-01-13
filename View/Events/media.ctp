@@ -30,12 +30,31 @@
 					'readonly' => 'readonly'
 				) 
 			);
-			echo $this->Form->input('Media.media', array(
+			echo $this->Form->input('Media.0.media', array(
 					'label' => array('text' => 'Média: '),
 					'class' => 'span12',
 					'type' => 'file'
 				) 
 			);
+			echo $this->Form->input('Media.1.media', array(
+					'label' => array('text' => 'Média: '),
+					'class' => 'span12',
+					'type' => 'file'
+				) 
+			);
+			echo $this->Form->input('Media.2.media', array(
+					'label' => array('text' => 'Média: '),
+					'class' => 'span12',
+					'type' => 'file'
+				) 
+			);
+			echo $this->Form->input('Media.3.media', array(
+					'label' => array('text' => 'Média: '),
+					'class' => 'span12',
+					'type' => 'file'
+				) 
+			);
+
 			?>
 		</fieldset>
 
